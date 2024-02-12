@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "node ./server/app.js",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "node ./server/app.js"
   },
   "proxy": "https://api.live-casino-club.com",
