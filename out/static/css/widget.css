@@ -1,0 +1,22 @@
+.avatar-img {
+    /*border: 1px solid #dfdfdf;*/
+}
+.login-back {
+    margin-top:-20px;
+    margin-right:-15px !important;
+    padding:0 !important;
+}
+.createAccount-back{
+    margin-top:-20px;
+    margin-right:-10px !important;
+    padding:0 !important;
+}
+
+.label_align_c {
+    align-items: center;
+    display: flex;
+}
+
+.padding_10_5 {
+    padding: 10px 5px;
+}

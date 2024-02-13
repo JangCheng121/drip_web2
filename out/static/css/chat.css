@@ -1,0 +1,14 @@
+.chat-addition-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.chat-actions {
+
+}
+
+.chat-server-address {
+    margin: 20px 0;
+    font-size: 17px;
+}

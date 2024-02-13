@@ -1,0 +1,15 @@
+.list_root {
+    width: 100%;
+    position: relative;
+    /*background-color:green;*/
+    overflow: auto;
+    height: 100%;
+    max-height: 70vh;
+}
+.listSection {
+    background-color: inherit;
+}
+.list_ul {
+    background-color: inherit;
+    padding: 0;
+}

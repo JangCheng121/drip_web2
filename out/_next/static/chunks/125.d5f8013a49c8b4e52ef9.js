@@ -1,0 +1,1 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[125],{Nwgz:function(n,t,a){"use strict";a.r(t);var e=a("q1tI"),c=a.n(e),s=c.a.createElement;t.default=function(n){var t=n.message;return t&&t.content&&t.content.data?s(c.a.Fragment,null,s("img",{alt:"present",src:t.content.data.img,style:{maxWidth:50}}),s("span",null,"x",t.content.data.cnt)):null}}}]);

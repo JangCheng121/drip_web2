@@ -1,0 +1,329 @@
+.infoContainer {
+    -webkit-box-shadow: 1px 2px 6px 0px #ccc;
+    -moz-box-shadow: 1px 2px 6px 0px #ccc;
+    box-shadow: 1px 2px 6px 0px #ccc;
+}
+
+.code-label {
+    color: #9999a6
+}
+
+.code-font {
+    color: #d43131;
+    font-weight: bolder;
+}
+
+.message-font {
+    color: #f4ae2a
+}
+
+.like-font {
+    color: #ea845d
+}
+
+.follow-font {
+    color: #1c9daf
+}
+
+.money-font {
+    color: #f4ae2a;
+    margin-left: 0.2em
+}
+
+.point_coin_view {
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 10px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+}
+
+.chargeContainer {
+    float: left;
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.point-btn {
+    font-weight: 800;
+}
+
+.box {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img-preview {
+    overflow: hidden;
+}
+
+.money_title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    color: white;
+    border-right: 10px;
+}
+
+.money_title_img {
+    width: 60%;
+    border-radius: 50%;
+    border: 3px solid #ffed71;
+    justify-self: center;
+    margin-top: 25px;
+}
+
+.money_title_button {
+    border-radius: 10px;
+    width: 100px;
+    color: white;
+    background-color: #FF695C;
+    box-shadow: 3px 5px 6px 0px #b8b8b8;
+    justify-self: center;
+    margin: 10px 0;
+}
+.money_exchange_title_button {
+    border-radius: 10px;
+    width: 100px;
+    color: white;
+    background-color: #FF695C;
+    box-shadow: 3px 5px 6px 0px #b8b8b8;
+    justify-self: center;
+    margin: 10px 0;
+}
+.money_title_text {
+    border-radius: 10px;
+    color: red;
+    font-style: oblique;
+    justify-self: center;
+}
+.money_exchange_title_text {
+    border-radius: 10px;
+    color: red;
+    font-style: oblique;
+    justify-self: center;
+}
+.money_bg_img {
+    background-size: inherit;
+    border-right: 10px !important;
+    border-radius: inherit;
+    background: linear-gradient(
+        to top, rgba(255, 237, 113, 0.87) 0%,
+        rgba(255, 240, 132, 0.45) 70%,
+        rgba(255, 240, 132, 0.24) 100%);
+    align-items: center;
+    display: grid;
+}
+
+.mine_borderBottom_0 {
+    border-bottom: 0;
+}
+
+.arrow_border_color {
+    border-color: transparent !important;
+}
+
+.table_text_align_center {
+    text-align: center !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    border-right: 0 !important;
+}
+
+.popover_max_width {
+    max-width : 500px;
+    width : 500px
+}
+
+.popoverCloseBtn {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(125, 125, 125, 0.6);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 30px;
+}
+
+.tabs-header {
+    display: table;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabs-header li {
+    display: table-cell;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    width:33.3333%;
+}
+
+.tabs-header li > div {
+    display: block;
+    padding: 8px;
+    transition: all .2s ease-in;
+}
+
+.tabs-header li > div span {
+    display: block;
+}
+
+.tabs-header li > div:hover {
+    color: black !important;
+}
+
+.tabs-header li.active > div {
+    color: black;
+    border-bottom: 2px solid red;
+}
+
+.tabs-content {
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tabs-content .tabs-textItem {
+    display: none;
+    transform: translateY(100%);
+}
+
+.tabs-content .tabs-textItem.show {
+    display: block;
+    transform: translateY(0);
+    animation: change .49s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tabs-content .tabs-textItem p {
+    font: normal 15px/1.5 'Open Sans';
+    color: #000000;
+}
+
+.div_column {
+    flex-direction: column;
+    display: flex;
+}
+
+.div_row {
+    flex-direction: row;
+    display: flex !important;
+}
+.top_modal_btn {
+    margin: 5px !important;
+    background-color: white !important;
+    color: black !important;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.link_active {
+    color: #f50057 !important;
+}
+
+.profile_content {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.profile_edit_btn {
+    margin: 10px 10px auto auto;
+    position: sticky;
+    display: flex;
+    bottom: 100%;
+    background-color: rgba(213, 213, 213, 0.49);
+    border-radius: 50%;
+    padding: 5px;
+}
+.main_prof_item {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.edit_data_content {
+    min-width: 330px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.edit_data_item {
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.edit_img_content{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.edit_image {
+    background-color: #c8c8c8;
+    border-radius: 50%;
+}
+.edit_content {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.top_modal_content_margin {
+    margin: 10px !important;
+}
+
+@media (max-width: 650px) {
+    .profile_content {
+        flex-direction: column;
+    }
+    .top_modal_btn {
+        padding: 2px 4px !important;
+        min-width: 50px !important;
+        margin: 2px !important;
+    }
+    .edit_content {
+        flex-direction: column;
+    }
+    .main_prof_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .edit_data_content {
+        flex-direction: column;
+    }
+    .edit_img_content{
+        margin-right: 0;
+        width: 150px;
+    }
+}
