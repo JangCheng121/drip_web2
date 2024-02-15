@@ -11,7 +11,7 @@ const rtmpPort = 1935;
 const hlsPort = 443;
 
 // const appServer = 'http://127.0.0.1';
-// const apiServer = 'http://127.0.0.1';
+ //const apiServer = 'http://12'//;
 // const rtmpServer = 'rtmp://live.live-casino-club.com';
 // const hlsServer = 'https://live.live-casino-club.com';
 // const staticServer = 'https://static.live-casino-club.com';

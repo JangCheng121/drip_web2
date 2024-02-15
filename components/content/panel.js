@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import Pagination from '@material-ui/lab/Pagination';
 import StackGrid from "react-stack-grid";
 import Photo from './photo'
 import Video from './video'
@@ -32,9 +33,10 @@ class Panel extends React.Component {
             alertModalStr: '',
             goStatus: 'login',
             clickedItemId: -1,
-            modalBtnStr: '',
+            modalBtnStr: '',            
             isShowTop: true,
-            scrollState: false,//이전 스크롤 상태가 있는가?
+            scrollState: false,
+            pageNumber: 1,
         };
         const {popupToggleFunc, category_id} = this.props;
         this.popupData = dataService.popupData;
@@ -201,6 +203,10 @@ class Panel extends React.Component {
         updateUser && updateUser(userId, {followed: followed})
     }
 
+    handlePageChange(event, value){
+        this.setState({pageNumber: value});
+    }
+
     toggleModal(state = '', data = {}) {
         let {t} = this.props;
         let str = '', btnStr = '';
@@ -274,6 +280,9 @@ class Panel extends React.Component {
         if (isHomeView) {
             dataList = dataList.slice(0, num*2);
         }
+
+        const from = (this.state.pageNumber - 1) * num * 5;
+        const to   = this.state.pageNumber * num * 5;
         return (
             <div style={{minHeight: '100%', overflow: "hidden"}} ref={(ref) => this.scrollParentRef = ref}>
                 <InfiniteScroll
@@ -290,7 +299,7 @@ class Panel extends React.Component {
                                gutterHeight={20}
                                style={{margin: '0 auto'}}
                     >
-                        {dataList.map((item, index) => {
+                        {dataList.slice(from, to).map((item, index) => {
                             let data = contents.contents[item],
                                 user = users[data.user_id],
                                 is_follow = Tool.getIndexByValue(mi.follow, data.user_id) !== -1;
@@ -403,9 +412,9 @@ class Panel extends React.Component {
                         })}
                     </StackGrid>
                 </InfiniteScroll>
-                {modelStatus === CONST.STATUS_REQ_NOMORE ?
-                    <div style={{alignItems: "center", display: "flex", justifyContent: "center"}}>
-                        <h4 style={{display: "block"}}>{t('NO_DATA')}</h4>
+                {modelStatus === CONST.STATUS_REQ_NOMORE && !isHomeView && dataList.length != 0 ?
+                    <div style={{alignItems: "center", display: "flex", justifyContent: "center", marginTop: '2rem'}}>
+                        <Pagination count={Math.ceil(dataList.length/num/5)} page={this.state.pageNumber} onChange={this.handlePageChange.bind(this)} color="primary" />
                     </div>
                     : null
                 }

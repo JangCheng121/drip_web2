@@ -9,7 +9,7 @@ import {persistStore} from 'redux-persist'
 import {PersistGate} from 'redux-persist/integration/react'
 import {dataService} from "../model/DataService";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import "@babel/polyfill";
+import "@babel/polyfill/noConflict";
 import {appWithTranslation, withTranslation} from '../i18n'
 import {DefaultSeo} from "next-seo";
 import Header from '../components/Header';

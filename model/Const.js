@@ -11,7 +11,7 @@ export const NET_INFO = {
 };
 
 /* Request Status */
-export const COUNT_ONE_PAGE = 3;
+export const COUNT_ONE_PAGE = 35;
 
 export const STATUS_REQ_IDLE    = `${config.appName}/STATUS_REQ_IDLE`;
 export const STATUS_REQ_START   = `${config.appName}/STATUS_REQ_START`;

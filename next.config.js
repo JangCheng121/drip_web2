@@ -43,4 +43,17 @@ module.exports = withCSS({
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.js']
     },
+    trailingSlash: true,
+
 })
+
+// module.exports = {
+//     async rewrites() {
+//       return [
+//         {
+//           source: '/:path*',
+//           destination: '/',
+//         },
+//       ];
+//     },
+//   };
