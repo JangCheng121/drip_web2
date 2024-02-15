@@ -19,5 +19,6 @@ const NextI18Next = require('next-i18next').default;
 
 module.exports = new NextI18Next({
     defaultLanguage: 'cn',
-    otherLanguages: ['en', 'ko']
+    otherLanguages: ['en', 'ko'],
+    keySeparator: false
 });
