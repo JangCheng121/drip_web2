@@ -67,7 +67,7 @@ export default class DataService {
     }
 
     loadInitData() {
-        console.log("자료적재중...");
+        console.log("Loading...");
         const dispatch = vm.store.dispatch;
         dispatch(System.getSettingAsync());//설정정보
         dispatch(Categories.getCategoriesAsync());//카테고리자료
@@ -439,7 +439,7 @@ export default class DataService {
     * */
     socket_connect() {
 
-        console.log('소켓련결', getServerUrl())
+        console.log('Connect to Socket.', getServerUrl())
 
         vm.socket = socketIOClient(getServerUrl());
         vm.socket.on('connect', function (p_socket) {
@@ -634,7 +634,7 @@ export default class DataService {
             Router.pushRoute('/');
             return;
         }
-        console.log('소켓자료를 보낸다.', type, data);
+        console.log('Sending Socket Data..', type, data);
         if (!vm.socket || !vm.socket.connected) {
             vm.socket_connect();
         }
