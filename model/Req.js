@@ -8,7 +8,7 @@ import Router from 'next/router';
 
 export let axiosInstance = null;
 
-const TIMEOUT = 30000; 
+const TIMEOUT = 15000; 
 export function reqInit(token) {
     console.log("init axiosInstance");
     axiosInstance = axios.create({
@@ -20,6 +20,7 @@ export function reqInit(token) {
 
 export function httpReq(url, method, params, haveHeader = false) {
 
+    console.log("+++++" + url);
     let p = (method === 'get') ? {params: params} : params;
     return new Promise(function (resolve, reject) {
         if (!axiosInstance) {
