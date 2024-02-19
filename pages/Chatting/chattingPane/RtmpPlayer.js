@@ -6,11 +6,11 @@ import ReactPlayer from 'react-player';
 const RtmpPlayer = (props) => {
 
     const {channel} = props;
-    const videoUrl = channel.streamKey.toString().indexOf('http') === 0 ? channel.streamKey : `${config.hlsUrl}/${channel.streamKey}/index.m3u8`;
+    const videoUrl = channel.streamKey.toString().indexOf('http') === 0 ? channel.streamKey : `${config.hlsUrl}/${channel.streamKey}.m3u8`;
     return (
             <ReactPlayer
                 url={videoUrl}
-                type={'application/mpegurl'}
+                type={'application/vnd.apple.mpegurl'}
                 playing
                 forceHLS
                 width={'100%'}

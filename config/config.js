@@ -28,7 +28,7 @@ const config = {
     staticServerUrl: staticServer,
     databaseUrl: `mongodb://localhost/${databaseName}`,
     rtmpUrl: `${rtmpServer}:${rtmpPort}/live`,
-    hlsUrl: `${hlsServer}:${hlsPort}/live`,
+    hlsUrl: `${hlsServer}:${hlsPort}`,
     jsonOptions: {
         headers: {
             'Content-Type': 'application/json'
