@@ -36,8 +36,8 @@ export function httpReq(url, method, params, haveHeader = false) {
                 else
                     resolve(res.data);
             })
-            .catch((err) => {
-                console.log('httpReq error================' + err);
+            .catch((err) => {                
+                console.log('httpReq error================' + url + ":" + err);
                 if (err.response && err.response.status <= 499 && err.response.status >= 400) {
                     let status = err.response.status;
                     let data = err.response.data;
@@ -70,7 +70,7 @@ export function httpReq(url, method, params, haveHeader = false) {
                     }
                 } else if (err.message === 'timeout of 15000ms exceeded') {
                     // Router.pushRoute('/login');
-                    console.log('httpReq error======timeout of 15000ms exceeded===========');
+                    console.log('httpReq error======timeout of 15000ms exceeded===========' + url);
                 }
                 reject(err)
             })
