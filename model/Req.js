@@ -8,7 +8,7 @@ import Router from 'next/router';
 
 export let axiosInstance = null;
 
-const TIMEOUT = 15000; //련결만료 대기시간
+const TIMEOUT = 30000; 
 export function reqInit(token) {
     console.log("init axiosInstance");
     axiosInstance = axios.create({
