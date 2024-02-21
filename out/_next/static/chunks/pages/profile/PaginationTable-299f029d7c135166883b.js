@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[192],{"Tn/h":function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/profile/PaginationTable",function(){return o("X6H8")}])}},[["Tn/h",6,5,8,11,14,0,7,10,12,13,16,44,1]]]);
