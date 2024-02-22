@@ -119,12 +119,19 @@ class Panel extends React.Component {
 
         let documentData = document.querySelector('#contentPanel');
         this.width = documentData ? documentData.offsetWidth : window.innerWidth * 0.8 - 10;
-        window.scrollTo(0, dataService.panStatus.scrollY);
+
+        this.setState({pageNumber: dataService.panStatus.pageNumber})
+        setTimeout(() => {
+            window.scrollTo(0, dataService.panStatus.scrollY);
+        }, 500);
     }
 
     clickCellItem(data) {
         if (!data) return;
         dataService.panStatus.scrollY = window.pageYOffset;
+
+        dataService.panStatus.pageNumber = this.state.pageNumber; 
+
         let mi = this.props.mi;
 
         if (data.point === 0 || data.user_id === mi.id) {

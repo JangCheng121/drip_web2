@@ -32,7 +32,8 @@ export default class DataService {
     panStatus = {
         page: '',
         activeTab: '',
-        scrollY: 0
+        scrollY: 0,
+        pageNumber: 1
     };
     popupData = [];
 
